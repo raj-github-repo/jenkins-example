@@ -1,7 +1,7 @@
 ipipeline {
 	agent {  label 'linux-node' }
 	stages {
-		stage('---cleaning----'){
+		stage('---clean----'){
 			tools {
 				maven 'maven_3.9.4'
 			}
@@ -10,7 +10,7 @@ ipipeline {
 				sh "mvn clean"
 			}
 		}
-		stage('---testing---') {
+		stage('---test---') {
 			tools {
 				maven 'maven_3.9.0'
 			}
