@@ -1,4 +1,4 @@
-ipipeline {
+pipeline {
 	agent {  label 'linux-node' }
 	stages {
 		stage('---clean----'){
